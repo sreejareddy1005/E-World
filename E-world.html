@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>E-World Website</title>
+</head>
+<frameset rows="20%,10%,*" frameborder="0">
+<frameset cols="*" frameborder="0">
+<frame name="f12" src="title.html" scrolling="no"></frame>
+</frameset>
+<frameset cols="20%,20%,20%,20%,*" frameborder="0">
+<frame name="f21" src="home.html"></frame>
+<frame name="f22" src="login.html"></frame>
+<frame name="f23" src="reg.html"></frame>
+<frame name="f24" src="cat.html"></frame>
+<frame name="f25" src="cart.html"></frame>
+</frameset>
+<frameset cols="*" frameborder="0">
+<frame name="f32" src="homepage.html"></frame>
+</frameset>
+</frameset>
+</html>
+title.html
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title></title>
+</head>
+<body style=background-color: #ffffff>
+<h1><center><font face = "Monotype Corsiva" size = "8" style="color:#3E292A">E-World Website</font></center><br /></h1>
+</body>
+</html>
+home.html
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title></title>
+</head>
+<body style=background-color:#e6ebef>
+<a href="homepage.html" target="f32"><font face = "Verdana" size = "2" style="color:#151102">HOME</font></a>
+
+</body>
+</html>
+login.html
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title></title>
+</head>
+<body style=background-color:#e6ebef>
+<a href="loginpage.html" target="f32"><font face = "Verdana" size = "2" style="color:#4C3230">LOGIN</font></a>
+</body>
+</html>
+reg.html
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title></title>
+</head>
+<body style=background-color:#e6ebef>
+<a href="regpage.html" target="f32"><font face = "Verdana" size = "2" style="color:#4C3230">SIGN-UP</font></a>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title></title>
+</head>
+<body style=background-color:#e6ebef>
+<a href="catpage.html" target="f32"><font face = "Verdana" size = "2" style="color:#4C3230">CATALOGUE</font></a>
+</body>
+</html>
+cart.html
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title></title>
+</head>
+<body style=background-color:#e6ebef>
+<a href="cartpage.html" target="f32"><font face = "Verdana" size = "2" style="color:#4C3230">Saved Books</font></a>
+</body>
+</html>
+homepage.html
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title></title>
+</head>
+<body style=background-color:#FFF1F9>
+<center>
+<tr>
+           <td>
+			 <br/>
+           </td>
+        </tr>
+<h1><center><font face = "Dancing Script" size = "6" style="color:#4C3230">Welcome to the Virtual World of Books</font></center></h1>
+<form role="search" id="form">
+     <input type="search" id="query" name="q" placeholder="Search..." aria-label="Search through site content">
+     <button>
+       <svg viewBox="0 0 5000 3000"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg>
+     </button>
+    </form>
+    <script>
+      const f = document.getElementById('form');
+      const q = document.getElementById('query');
+      const google = 'https://www.google.com/search?q=site%3A+';
+      const site = 'pagedart.com';
+
+      function submitted(event) {
+        event.preventDefault();
+        const url = google + site + '+' + q.value;
+        const win = window.open(url, '_blank');
+        win.focus();
+      }
+
+      f.addEventListener('submit', submitted);
+    </script>
+<tr>
+           <td>
+			 <br/>
+			 <br/>
+           </td>
+        </tr>
+
+<link rel="stylesheet"href="style.css">
+<div class="container">
+        <div class="wrapper">
+            <img src="0_edited.jpg" width="1000" height="300">
+			<img src="1_edited.jpg" width="9000" height="300">
+			<img src="2_edited.jpg" width="1000" height="300">
+			<img src="3_edited.jpg" width="1000" height="300">
+			<img src="4_edited.jpg" width="1000" height="300">
+			<img src="5_edited.jpg" width="1000" height="300">
+			<img src="6_edited.jpg" width="1000" height="300">
+        </div>
+    </div>
+<form>
+<table cellspacing="10">
+<tr>
+           <td>
+			 <br/>
+			 <br/>
+           </td>
+        </tr>
+        <tr>
+            <td>
+			    <br/>
+				<br/>
+				<br/>
+                <br />
+                <br />
+				<br/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <br/>
+				<br/>
+				<br/>
+				<br/>
+				<br/>
+				<br/>
+				<br/>
+				<br/>
+				<br/>
+				<br/>
+				<br/>
+				<br/>
+            </td>
+        </tr>
+<tr>
+<td><a href="https://air.ind.in/wp-content/uploads/2022/11/FLIP-OVER-FROM-MIND-TO-CONSCIOUSNESS-FROM-NEP-TO-PEP_Layout-1_compressed.pdf"> <img src="air-1.jpg" alt="here you go" height="200" width="200" border: /></a>
+<td> Title : THE SECRET TO PEACE AND HAPPINESS <br>
+Author : Ravi V.Melwani;<br>
+<a href="cartpage.html"><img src="addToCart.jpg" width="150" height="70"><br></td></a>
+</tr>
+<tr>
+<td><a href="https://air.ind.in/wp-content/uploads/2022/08/6.-I-Am-Not-I-Who-Am-I.pdf"> <img src="air-3.jpg" alt="here you go" height="200" width="200"  border: /></a>
+<td> Title : Iam Not Who Iam <br>
+Author : Ravi V.Melwani<br>
+<a href="cartpage.html"><img src="addToCart.jpg" width="150" height="70"><br></td></a>
+</tr>
+<tr>
+<td><a href="https://air.ind.in/wp-content/uploads/2022/08/100-Diamond-Quotes.pdf"> <img src="air-2.jpg" alt="here you go" height="200" width="200"  border: /></a>
+<td> Title : 100 Diamond quotes <br>
+Author :Ravi V.Melwani <br>
+<a href="cartpage.html"><img src="addToCart.jpg" width="150" height="70"><br></td></a>
+</tr>
+<tr>
+<td><a href="https://archive.org/embed/willingtodie00lefarich"> <img src="51ncrQVHzVL._SY291_BO1,204,203,200_QL40_ML2_.jpg" alt="here you go" height="200" width="200"  border: /></a>
+<td> Title : Willing to Die <br>
+Author : J.Sheridan Le Fanu<br>
+<a href="cartpage.html"><img src="addToCart.jpg" width="150" height="70"><br></td></a>
+</tr>
+<tr>
+<td><a href="https://archive.org/embed/kazancurwood00curwiala"> <img src="19272194.jpg" alt="here you go" height="200" width="150"  border: /></a>
+<td> Title : Kazan <br>
+Author : James Oliver Curwood<br>
+<a href="cartpage.html"><img src="addToCart.jpg" width="150" height="70"><br></td></a>
+</tr>
+<tr>
+<td><a href="https://archive.org/embed/empirebuilders00lyndrich"> <img src="md3054623564.jpg" alt="here you go" height="200" width="150"  border: /></a>
+<td> Title : Empire Builders<br>
+Author : Francis Lynde<br>
+<a href="cartpage.html"><img src="addToCart.jpg" width="150" height="70"><br></td></a>
+</tr>
+<tr>
+<td><a href="https://archive.org/embed/violetfairybook00lang"> <img src="voiletfairybook.jpg" alt="here you go" height="200" width="150"  border: /></a>
+<td> Title : The Violet Fairy Book<br>
+Author : Andrew Lang<br>
+<a href="cartpage.html"><img src="addToCart.jpg" width="150" height="70"><br></td></a>
+</tr>
+<tr>
+<td><a href="https://archive.org/embed/sri-sri-mahaprasthanam"> <img src="Maha Prasthanam Sri Sri.jpg" alt="here you go" height="200" width="150"  border: /></a>
+<td> Title : Maha Prasthanam<br>
+Author : Sri Sri<br>
+<a href="cartpage.html"><img src="addToCart.jpg" width="150" height="70"><br></td></a>
+</tr>
+<tr>
+<td><a href="https://archive.org/embed/the-little-clay-hut-telugu-bal"> <img src="0000.jpg" alt="here you go" height="200" width="150"  border: /></a>
+<td> Title : The Little Clay Hut in Telugu<br>
+Author : Bernard Isaacs;George Hanna;<br>
+<a href="cartpage.html"><img src="addToCart.jpg" width="150" height="70"><br></td></a>
+</tr>
+<tr>
+<td><a href="https://archive.org/details/5-6278553828048502868/mode/2up"> <img src="5a03fefbd9441d0001bba4a2_Kathalu - Amaravati Kathalu.jpg" alt="here you go" height="200" width="150"  border: /></a>
+<td> Title : Amaravati Kathalu<br>
+Author : Satyam Sankaramanchi<br>
+<a href="cartpage.html"><img src="addToCart.jpg" width="150" height="70"><br></td></a>
+</tr>
+<tr>
+<td><a href="https://archive.org/embed/LaghuUpanyasAurKahaniyan-Hindi"> <img src="default.jpg" alt="here you go" height="200" width="150"  border: /></a>
+<td> Title : Laghu Upanyas Aur Kahaniyan<br>
+Author : Anton Chekov<br>
+<a href="cartpage.html"><img src="addToCart.jpg" width="150" height="70"><br></td></a>
+</tr>
+<tr>
+<td><a href="https://archive.org/embed/in.ernet.dli.2015.464288"> <img src="1111.jpg" alt="here you go" height="200" width="150"  border: /></a>
+<td> Title : Uparvas Kathatrayi<br>
+Author : Chaudhari<br>
+<a href="cartpage.html"><img src="addToCart.jpg" width="150" height="70"><br></td></a>
+</tr>
+<tr>
+<td><a href="https://archive.org/embed/SrimadValmikiRamayanamBalakandamAyodhyaKandam"> <img src="nan630.jpg" alt="here you go" height="200" width="150"  border: /></a>
+<td> Title : Srimad Valmiki Ramayanam AyodhyaKandam<br>
+Author : Valmiki<br>
+<a href="cartpage.html"><img src="addToCart.jpg" width="150" height="70"><br></td></a>
+</tr>
+</table>
+</form>
+</center>
+</body>
+</html>
+loginpage.html
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+     <title></title>
+     <style type="text/css">
+         body{
+		     background-image:url(a8.jpg);
+			 background-size:cover;
+			 background-attachment:fixed;
+		}
+		.content{
+		    background:white;
+			width:60%;
+			padding:70px;
+			margin:90px;
+			font-family:calibri;
+		}
+		p{
+		    font-size:30px;
+			color:black;
+		}
+	</style>
+</head>
+<body>
+    
+	<div class="content">
+<form>
+<table align="center" cellspacing="15px">
+<tr>
+<td><b>Login</b></td>
+<td><input type="text" name="uname" /></td>
+</tr>
+<tr>
+<td><b>Password</b></td>
+<td><input type="password" name="upwd" /></td>
+</tr>
+<tr>
+<td colspan="2" align="center">
+<input type="button" onclick="location.href='homepage.html';" value="Submit" />
+<input type="reset" />
+</td>
+</tr>
+</table>
+</form>
+</div>
+</body>
+</html>
+regpage.html
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <style type="text/css">
+         body{
+		     background-image:url(a6.jpg);
+			 background-size:cover;
+			 background-attachment:fixed;
+		}
+		.content{
+		    background:white;
+			width:60%;
+			padding:70px;
+			margin:90px;
+			font-family:calibri;
+		}
+		p{
+		    font-size:30px;
+			color:black;
+		}
+	</style>
+</head>
+<body>
+<form>
+<h1 align="center"> REGISTRATION </h1>
+<table align="center" cellspacing="10">
+<tr>
+<td>Name::</td>
+<td> <input name="uname" type="text"> </td>
+</tr>
+<tr>
+<td>Password::</td>
+<td> <input name="pwd" type="password"> </td>
+</tr>
+<tr>
+<td> E-mail ID:: </td>
+<td> <input name="email" type="text"> </td>
+</tr>
+<tr>
+<td> Phone Number:: </td>
+<td> <input name="phno" type="text" maxlength="10"> </td>
+</tr>
+<tr>
+<td> Gender:: </td>
+<td><input name="gender" type="radio" value="Male">&nbsp;&nbsp;Male &nbsp;&nbsp;&nbsp;&nbsp;
+<input name="gender" type="radio" value="Female">&nbsp;&nbsp;Female</td>
+</tr>
+<tr>
+<td> Date of Birth </td>
+<td>
+<input type="date" name="dob" />
+</td>
+</tr>
+<tr>
+<td valign="top">Languages Known::</td>
+<td>
+<input name="lk" type="checkbox" value="English">&nbsp;English<br>
+<input name="lk" type="checkbox" value="Telugu">&nbsp;Telugu<br>
+<input name="lk" type="checkbox" value="Hindi">&nbsp;Hindi<br>
+<input name="lk" type="checkbox" value="Tamil">&nbsp;Tamil<br>
+</td>
+</tr>
+<tr>
+<td>Address</td>
+<td><textarea></textarea></td>
+</tr>
+<tr>
+<td colspan="2" align="center"> <input type="button" onclick="location.href='homepage.html';" value="Submit" />
+<input type="button" value="reset"> </td>
+</tr>
+</table>
+</form>
+</body>
+</html>
+catpage.html
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title></title>
+<style type="text/css">
+         body{
+		     background-image:url(a7.jpg);
+			 background-size:cover;
+			 background-attachment:fixed;
+		}
+		.content{
+		    background:white;
+			width:60%;
+			padding:70px;
+			margin:90px;
+			font-family:calibri;
+		}
+		p{
+		    font-size:30px;
+			color:black;
+		}
+	</style>
+</head>
+<body>
+<form>
+<table cellspacing="10">
+<tr>
+<td><a href="https://air.ind.in/wp-content/uploads/2022/11/FLIP-OVER-FROM-MIND-TO-CONSCIOUSNESS-FROM-NEP-TO-PEP_Layout-1_compressed.pdf"> <img src="air-1.jpg" alt="here you go" height="200" width="200"  border: /></a>
+<td> Title : THE SECRET TO PEACE AND HAPPINESS <br>
+Author : Ravi V.Melwani;<br>
+<a href="cartpage.html"><img src="addToCart.jpg" width="150" height="70"><br></td></a>
+<td><a href="https://air.ind.in/wp-content/uploads/2022/08/6.-I-Am-Not-I-Who-Am-I.pdf"> <img src="air-3.jpg" alt="here you go" height="200" width="200"  border: /></a>
+<td> Title : Iam Not Who Iam <br>
+Author : Ravi V.Melwani<br>
+<a href="cartpage.html"><img src="addToCart.jpg" width="150" height="70"><br></td></a>
+</tr>
+<tr>
+<td><a href="https://air.ind.in/wp-content/uploads/2022/08/100-Diamond-Quotes.pdf"> <img src="air-2.jpg" alt="here you go" height="200" width="200"  border: /></a>
+<td> Title : 100 Diamond quotes <br>
+Author :Ravi V.Melwani <br>
+<a href="cartpage.html"><img src="addToCart.jpg" width="150" height="70"><br></td></a>
+<td><a href="https://archive.org/embed/willingtodie00lefarich"> <img src="51ncrQVHzVL._SY291_BO1,204,203,200_QL40_ML2_.jpg" alt="here you go" height="200" width="200"  border: /></a>
+<td> Title : Willing to Die <br>
+Author : J.Sheridan Le Fanu<br>
+<a href="cartpage.html"><img src="addToCart.jpg" width="150" height="70"><br></td></a>
+</tr>
+<tr>
+<td><a href="https://archive.org/embed/kazancurwood00curwiala"> <img src="19272194.jpg" alt="here you go" height="200" width="150"  border: /></a>
+<td> Title : Kazan <br>
+Author : James Oliver Curwood<br>
+<a href="cartpage.html"><img src="addToCart.jpg" width="150" height="70"><br></td></a>
+<td><a href="https://archive.org/embed/empirebuilders00lyndrich"> <img src="md3054623564.jpg" alt="here you go" height="200" width="150"  border: /></a>
+<td> Title : Empire Builders<br>
+Author : Francis Lynde<br>
+<a href="cartpage.html"><img src="addToCart.jpg" width="150" height="70"><br></td></a>
+</tr>
+<tr>
+<td><a href="https://archive.org/embed/violetfairybook00lang"> <img src="voiletfairybook.jpg" alt="here you go" height="200" width="150"  border: /></a>
+<td> Title : The Violet Fairy Book<br>
+Author : Andrew Lang<br>
+<a href="cartpage.html"><img src="addToCart.jpg" width="150" height="70"><br></td></a>
+<td><a href="https://archive.org/embed/sri-sri-mahaprasthanam"> <img src="Maha Prasthanam Sri Sri.jpg" alt="here you go" height="200" width="150"  border: /></a>
+<td> Title : Maha Prasthanam<br>
+Author : Sri Sri<br>
+<a href="cartpage.html"><img src="addToCart.jpg" width="150" height="70"><br></td></a>
+</tr>
+<tr>
+<td><a href="https://archive.org/embed/the-little-clay-hut-telugu-bal"> <img src="0000.jpg" alt="here you go" height="200" width="150"  border: /></a>
+<td> Title : The Little Clay Hut in Telugu<br>
+Author : Bernard Isaacs;George Hanna;<br>
+<a href="cartpage.html"><img src="addToCart.jpg" width="150" height="70"><br></td></a>
+<td><a href="https://archive.org/details/5-6278553828048502868/mode/2up"> <img src="5a03fefbd9441d0001bba4a2_Kathalu - Amaravati Kathalu.jpg" alt="here you go" height="200" width="150"  border: /></a>
+<td> Title : Amaravati Kathalu<br>
+Author : Satyam Sankaramanchi<br>
+<a href="cartpage.html"><img src="addToCart.jpg" width="150" height="70"><br></td></a>
+</tr>
+<tr>
+<td><a href="https://archive.org/embed/LaghuUpanyasAurKahaniyan-Hindi"> <img src="default.jpg" alt="here you go" height="200" width="150"  border: /></a>
+<td> Title : Laghu Upanyas Aur Kahaniyan<br>
+Author : Anton Chekov<br>
+<a href="cartpage.html"><img src="addToCart.jpg" width="150" height="70"><br></td></a>
+<td><a href="https://archive.org/embed/in.ernet.dli.2015.464288"> <img src="1111.jpg" alt="here you go" height="200" width="150"  border: /></a>
+<td> Title : Uparvas Kathatrayi<br>
+Author : Chaudhari<br>
+<a href="cartpage.html"><img src="addToCart.jpg" width="150" height="70"><br></td></a>
+</tr>
+<tr>
+<td><a href="https://archive.org/embed/SrimadValmikiRamayanamBalakandamAyodhyaKandam"> <img src="nan630.jpg" alt="here you go" height="200" width="150"  border: /></a>
+<td> Title : Srimad Valmiki Ramayanam AyodhyaKandam<br>
+Author : Valmiki<br>
+<a href="cartpage.html"><img src="addToCart.jpg" width="150" height="70"><br></td></a>
+</tr>
+</table>
+</form>
+</body>
+</html>
+cartpage.html
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title></title>
+<style type="text/css">
+         body{
+		     background-image:url(a2.jpg);
+			 background-size:cover;
+			 background-attachment:fixed;
+		}
+		.content{
+		    background:white;
+			width:60%;
+			padding:70px;
+			margin:90px;
+			font-family:calibri;
+		}
+		p{
+		    font-size:30px;
+			color:black;
+		}
+	</style>
+</head>
+<body>
+<h1 align="center">Saved Books!!!</h1>
+<form>
+<table align="center" cellpadding="20px">
+<tr>
+<th>Product</th>
+<th>Description</th>
+</tr>
+<tr>
+<tr>
+<td><a href="https://air.ind.in/wp-content/uploads/2022/11/FLIP-OVER-FROM-MIND-TO-CONSCIOUSNESS-FROM-NEP-TO-PEP_Layout-1_compressed.pdf"> <img src="air-1.jpg" alt="here you go" height="200" width="200"  border: /></a>
+<td> Title : THE SECRET TO PEACE AND HAPPINESS <br>
+Author : Ravi V.Melwani;<br> </td>
+</tr>
+<tr>
+<td><a href="https://air.ind.in/wp-content/uploads/2022/08/100-Diamond-Quotes.pdf"> <img src="air-2.jpg" alt="here you go" height="200" width="200"  border: /></a>
+<td> Title : 100 Diamond quotes <br>
+Author :Ravi V.Melwani ;<br> </td>
+</tr>
+</table>
+</form>
+</body>
+</html>

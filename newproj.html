@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.navbar{
+  display: flex;
+  background-color:rgb(60, 124, 197);
+  position: fixed;
+  top:0;
+  width: 100%;
+  font-size: 20px;
+}
+
+.nav-right{
+  text-align: right;
+  float:right;
+}
+
+.nav-right li {
+    display: inline;
+    float: left;
+    padding-left: 15px;
+  }
+
+  .nav-right li a {
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    color:white;
+  }
+
+  .nav-right  li ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  .nav-right li a:hover {
+    background-color: rgb(31, 199, 106);
+  }
+
+  .nav-right .active {
+    background-color: #04AA6D;
+  }
+
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+  width: 300px;
+  height: 400px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-right">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/products.html">Products</a></li>
+            <li><a href="/About.html">About</a></li>
+            <li><a href="/login.html">Login</a></li>
+            <li><a href="/Register.html">Create Account</a></li>
+        </div>
+    </nav>
+
+<div class="about-section">
+  <h1>About Us </h1>
+  <p>Book Zone provides easy interface to its customer for purchasing books online.</p>
+  <p>For any query leave a comment in the Home page comment section. You can also send us email and call us 
+      on Week days. 
+      <br>Thankyou for your patience and hope you had a great shopping here.
+  </p>
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <center><img src="/images/p1.jfif" alt="Jane" style="width:100% height=300px"></center>
+      <div class="container">
+        <h2>Himansi</h2>
+        <p class="title">CEO & Founder</p>
+        <p>“Be yourself; everyone else is already taken.”</p>
+        <p>himanshi@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+        <center><img src="/images/p2.jfif" alt="Jane" style="width:100% height=300px"></center>
+      <div class="container">
+        <h2>Abc</h2>
+        <p class="title">Art Director</p>
+        <p>“Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.”</p>
+        <p>Abc@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+        <center><img src="/images/p3.jfif" alt="Jane" style="width:100% height=300px"></center>
+      <div class="container">
+        <h2>Xyz</h2>
+        <p class="title">Designer</p>
+        <p>“A room without books is like a body without a soul.”</p>
+        <p>xyz@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="/css/login.css">
+<title> CSS Login Screen Tutorial </title>
+</head>
+<body>
+  <body>
+    <nav class="navbar">
+        <div class="nav-right">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/products.html">Products</a></li>
+            <li><a href="/About.html">About</a></li>
+            <li><a href="/login.html">Login</a></li>
+            <li><a href="/Register.html">Create Account</a></li>
+        </div>
+    </nav>
+    <div class="login-page">
+      <div class="form">
+        <div class="login">
+          <div class="login-header">
+            <h3>REGISTER</h3>
+            <p>Please enter your credentials to login.</p>
+          </div>
+        </div>
+        <form class="login-form">
+          <input type="text" placeholder="username"/>
+          <input type="password" placeholder="password"/>
+           Female <input type="radio" name="female" value="female"/>
+            Male<input type="radio"  name="male" value="male"/> 
+          <button><a href="/login.html" style="text-decoration: none;">Register</a></button>
+          <p class="message">Not registered? <a href="/login.html">Login</a></p>
+        </form>
+      </div>
+    </div>
+</body>
+</body>
+</html>@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+
+.navbar{
+    display: flex;
+    background-color:rgb(60, 124, 197);
+    position: fixed;
+    top:0;
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .nav-right{
+    text-align: right;
+    float:right;
+  }
+
+  .nav-right li {
+      display: inline;
+      float: left;
+      padding-left: 15px;
+    }
+
+    .nav-right li a {
+      display: block;
+      padding: 8px;
+      text-decoration: none;
+      color:white;
+    }
+
+    .nav-right  li ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    .nav-right li a:hover {
+      background-color: rgb(31, 199, 106);
+    }
+
+    .nav-right .active {
+      background-color: #04AA6D;
+    }
+
+    /* main */
+header .header{
+  background-color: #fff;
+  height: 45px;
+}
+header a img{
+  width: 134px;
+margin-top: 4px;
+}
+.login-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+.login-page .form .login{
+  margin-top: -31px;
+margin-bottom: 26px;
+}
+.form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background-color: #328f8a;
+  background-image: linear-gradient(45deg,#328f8a,#08ac4b);
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+body {
+  background-color: #328f8a;
+  background-image: linear-gradient(45deg,#328f8a,#08ac4b);
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {margin:0;}
+
+.navbar{
+  display: flex;
+  background-color:rgb(60, 124, 197);
+  position: fixed;
+  top:0;
+  width: 100%;
+  font-size: 20px;
+}
+
+.nav-right{
+  text-align: right;
+  float:right;
+}
+
+.nav-right li {
+    display: inline;
+    float: left;
+    padding-left: 15px;
+  }
+
+  .nav-right li a {
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    color:white;
+  }
+
+  .nav-right  li ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  .nav-right li a:hover {
+    background-color: rgb(31, 199, 106);
+  }
+
+  .nav-right .active {
+    background-color: #04AA6D;
+  }
+
+
+/* body section  */
+
+.section-body{
+
+    padding-top: 30px;
+    padding-left: 15px;
+}
+.section-body h4{
+    font-size: large;
+}
+
+.vertical-nav
+{
+    padding-top: 10px;
+}
+
+
+.section-body ul {
+    list-style-type: none;
+    width: 18%;
+    background-color: #d6e4f0;
+    position: fixed;
+    height: auto;
+    overflow: auto;
+  }
+
+  .section-body  li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+
+  .section-body li a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+  .section-body li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+
+/* 
+  section-2 */
+
+  .image-holder{
+    border: 1px solid #ccc;
+    transition-duration:200ms;
+    transition-timing-function: ease-out;
+  }
+
+  .image-holder:hover {
+    border: 1px solid #777;
+    transform: scale(1.05,1.05);
+  }
+
+.gallery{
+
+    display: flex;
+    flex-direction: row; 
+    column-gap: 20px;
+    flex-wrap: wrap;
+    row-gap: 10px;
+}
+
+div.desc {
+    text-align: center;
+    width: 100%;
+ }
+
+ .desc i{
+    float: left !important;
+    padding-left: 10px;
+ }
+
+ .desc button{
+    float:right !important;
+    margin-right: 10px;
+    margin-bottom: 5px;
+ }
+
+.gallery img{
+    height: 250px;
+    width:200px;
+}
+
+.btn
+{
+    display: block;
+    border-radius: 5px;
+    color:white;
+    background-color: blue;
+    font-size:20px;
+    text-decoration: none;
+    width:fit-content;
+    height:fit-content;
+    padding:5px;
+}
+
+.btn:hover{
+    background-color: rgb(31, 199, 106)ue;
+}
+
+
+body {margin:0;}
+
+  .navbar{
+    display: flex;
+    background-color:rgb(60, 124, 197);
+    position: fixed;
+    top:0;
+    width: 100%;
+    font-size: 20px;
+}
+
+.nav-right{
+    text-align: right;
+    float:right;
+}
+
+.section-1{
+    padding:40px;
+    background-image: url("https://ak0.picdn.net/shutterstock/videos/20344780/thumb/1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height:550px;
+    background-size: 100% 100%;
+}
+
+.section-1-text{
+    display: block;
+    border: black;
+}
+
+h1{
+    font-size: 100px;
+    color: white;
+}
+.section-1 p{
+    font-size: 20px;
+    color: white;
+}
+
+.section-2
+{
+    padding: 35px;
+}
+
+.gallery div{
+    display: inline !important;
+}
+
+.section-2  a{
+    text-decoration: none;
+}
+
+.section-2 p{
+    color: black;
+    text-align: center;
+}
+
+
+div.gallery a:hover {
+    border: 1px solid white;
+}
+
+div.gallery image-holder desc {
+    text-align: center;
+}
+
+img{
+    height: 300px;
+    width:250px;
+}
+
+.btn
+{
+    display: block;
+    border-radius: 5px;
+    color:white;
+    background-color: blue;
+    font-size:20px;
+    text-decoration: none;
+    width:fit-content;
+    height:fit-content;
+    padding:5px;
+}
+
+.btn:hover{
+    background-color: rgb(31, 199, 106)ue;
+}
+
+li {
+    display: inline;
+    float: left;
+    padding-left: 15px;
+  }
+
+  li a {
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    color:white;
+  }
+
+  li ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  li a:hover {
+    background-color: rgb(31, 199, 106);
+  }
+
+  .active {
+    background-color: #04AA6D;
+  }
+
+/* section-3 image gallery 2 */
+
+  .section-3{
+      padding:35px;
+  }
+
+
+  .view-card {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+}
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    display: inline;
+
+  }
+
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  .container {
+    padding: 2px 16px;
+    align-items: center;
+  }
+
+
+  /* section-4 brands */
+  .section-4{
+    padding:35px;
+  }
+
+  .brand{
+      width: 20%;
+      display: inline;
+  }
+
+  .brand img{
+      height: 175px;
+  }
+
+/* section-5 contact us */
+.section-5
+{
+    background-color: rgb(224, 219, 219);
+    display: grid; 
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+  /* Style the container/contact section */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
